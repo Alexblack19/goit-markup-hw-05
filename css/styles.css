@@ -242,6 +242,40 @@ button {
   color: var(--accent-link-txt-cl);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.nav-link::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background: #404BBF;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
