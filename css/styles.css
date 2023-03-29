@@ -253,9 +253,10 @@ button {
 
 
 
-.nav-link::after {
+.nav-link::after {  
   content: "";
-  width: 48px;
+  
+  display: block;  
   height: 4px;
   background: #404BBF;
   border-radius: 2px;
