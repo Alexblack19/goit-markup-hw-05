@@ -253,12 +253,13 @@ button {
 
 
 
-.nav-link::after {  
+.nav-item:hover::after {  
   content: "";
-  
-  display: block;  
+  display: flex;
+  position: relative;
+    
   height: 4px;
-  background: #404BBF;
+  background-color: var(--accent-link-txt-cl);
   border-radius: 2px;
 }
 
