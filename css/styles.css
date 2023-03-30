@@ -53,12 +53,12 @@
   --customers-border-links-accent-cl: #404bbf;
   --social-links-accent-footer-bgd: #31d0aa;
 
-/** Modal window */
---modal-window-bgd: #FCFCFC;
---modal-button-icon-cl: #2E2F42;
---modal-button-accent-icon-cl: #FFFFFF;
---modal-button-bgd: #E7E9FC;
---modal-button-accent-bgd: #404BBF;
+  /** Modal window */
+  --modal-window-bgd: #FCFCFC;
+  --modal-button-icon-cl: #2E2F42;
+  --modal-button-accent-icon-cl: #FFFFFF;
+  --modal-button-bgd: #E7E9FC;
+  --modal-button-accent-bgd: #404BBF;
 }
 
 .page {
@@ -258,9 +258,9 @@ button {
   color: currentColor;
 }
 
-/** Header line link navigation */
+/** ===== Header line link navigation ===== */
 
-.nav-list .link {
+ .nav-item {
   position: relative;
 }
 
@@ -273,25 +273,10 @@ button {
   width: 100%;
   height: 4px;
   
-  background-color: var(--accent-link-txt-cl);  
+  background-color: currentColor;
 
   border-radius: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**========== Hero ========== */
 
@@ -694,20 +679,36 @@ button {
   border-top: 0px;
 }
 
-/** Modal window */
+/** ========== Modal window ========== */
+
+.backdrop {
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);  
+
+  width: 408px;
+  height: 576px;  
+}
 
 .modal {
-  width: 408px;
-  height: 576px;
-  margin: 0 auto;
-
+  position: relative;
+    
+  width: 100%;
+  height: 100%;  
+  
   background-color: var(--modal-window-bgd);
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.modal-button {
+.modal-close {
+  position: absolute;  
+  top: 24px;
+  right: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -721,8 +722,8 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-close:hover,
+.modal-close:focus {
   color: var(--modal-button-accent-icon-cl);
   background-color: var(--modal-button-accent-bgd);
 }

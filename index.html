@@ -573,12 +573,14 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="modal">
-      <button class="modal-button">
-        <svg aria-label="" class="icon-close-modal">
-          <use href="./images/icons.svg#icon-close-modal"></use>
-        </svg>
-      </button>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-close">
+          <svg aria-label="" class="icon-close-modal">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <script src="./js/modal.js" type="module"></script>
