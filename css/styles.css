@@ -477,18 +477,20 @@ button {
   border: 1px solid var(--customers-border-links-cl);
   border-radius: 4px;
 
-  fill: var(--customers-links-cl);
-}
-
-.customers-link:hover,
-.customers-link:focus {
-  border: 1px solid var(--customers-border-links-accent-cl);
-  fill: var(--customers-links-accent-cl);
+  color: var(--customers-links-cl);
 }
 
 .client-logo {
   width: 104px;
   height: 56px;
+
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--customers-border-links-accent-cl);
+  color: var(--customers-links-accent-cl);
 }
 
 /**========== Footer ==========*/
