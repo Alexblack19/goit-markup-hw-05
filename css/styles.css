@@ -52,6 +52,13 @@
   --customers-border-links-cl: #8e8f99;
   --customers-border-links-accent-cl: #404bbf;
   --social-links-accent-footer-bgd: #31d0aa;
+
+/** Modal window */
+--modal-window-bgd: #FCFCFC;
+--modal-button-icon-cl: #2E2F42;
+--modal-button-accent-icon-cl: #FFFFFF;
+--modal-button-bgd: #E7E9FC;
+--modal-button-accent-bgd: #404BBF;
 }
 
 .page {
@@ -675,3 +682,40 @@ button {
 
 /** Modal window */
 
+.modal {
+  width: 408px;
+  height: 576px;
+  margin: 0 auto;
+
+  background-color: var(--modal-window-bgd);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;  
+
+  color: var(--modal-button-icon-cl);
+  background-color: var(--modal-button-bgd);
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--modal-button-accent-icon-cl);
+  background-color: var(--modal-button-accent-bgd);
+}
+
+.icon-close-modal {
+  width: 8px;
+  height: 8px;
+
+  fill: currentColor;
+}
