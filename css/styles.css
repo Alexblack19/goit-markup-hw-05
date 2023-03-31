@@ -131,6 +131,7 @@ button {
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -155,7 +156,6 @@ button {
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
-
   text-transform: capitalize;
   text-align: center;
 
@@ -226,7 +226,6 @@ button {
   font-size: 18px;
   line-height: calc(21 / 18);
   letter-spacing: 0.03em;
-
   text-transform: uppercase;
 
   color: var(--primary-logo-cl);
@@ -253,6 +252,15 @@ button {
   color: var(--accent-link-txt-cl);
 }
 
+.nav-list .link,
+.nav-list .link.current,
+.address-list .link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -269,10 +277,11 @@ button {
 }
 
 .nav-list .link.current::after {  
-  content: "";
-  display: block;
   position: absolute; 
   bottom: -1px;
+  
+  content: "";
+  display: block;
 
   width: 100%;
   height: 4px;
@@ -312,6 +321,7 @@ button {
   margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
+
   max-width: 496px;
 
   font-size: 56px;
@@ -327,6 +337,7 @@ button {
   margin-right: auto;
   margin-left: auto;
   padding: 16px 32px;
+
   min-width: 169px;
 
   font-family: inherit;
@@ -344,6 +355,13 @@ button {
 .hero-btn:focus {
   background-color: var(--accent-btns-bgd-cl);
 }
+
+.hero-btn {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}  
 
 /** ========== Hero modal window ========== */
 
@@ -396,6 +414,13 @@ button {
 .modal-close:focus {
   color: var(--modal-button-accent-icon-cl);
   background-color: var(--modal-button-accent-bgd);
+}
+
+.modal-close {
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .icon-close-modal {
@@ -513,6 +538,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   height: 100%;
 
@@ -525,6 +551,13 @@ button {
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--social-links-accent-bgd);
+}
+
+.team-social-link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .team .icon {
@@ -551,6 +584,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   height: 100%;
 
@@ -571,6 +605,13 @@ button {
 .customers-link:focus {
   border: 1px solid var(--customers-border-links-accent-cl);
   color: var(--customers-links-accent-cl);
+}
+
+.customers-link {
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 /**========== Footer ==========*/
@@ -645,6 +686,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   height: 100%;
 
@@ -657,6 +699,13 @@ button {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--social-links-accent-footer-bgd);
+}
+
+.footer-social-link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .footer .icon {
@@ -713,6 +762,13 @@ button {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio-btn {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
 .portfolio-subtitle {
   margin-bottom: 8px;
 }
@@ -736,6 +792,13 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-cards .link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
 .portfolio-txt-card {
   padding: 32px 16px;
 
@@ -746,11 +809,12 @@ button {
 /** ========== Portfolio cards overlay ========== */
 
 .portfolio-cards-overlay {
-  width: 360px;
-  height: 300px;
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
+
+  width: 360px;
+  height: 300px;
   
   background-color: var(--cards-overlay-bgd);  
 }
