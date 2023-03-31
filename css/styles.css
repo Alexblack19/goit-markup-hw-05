@@ -349,19 +349,17 @@ button {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-btns-bgd-cl);
 }
-
-.hero-btn {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
-}  
 
 /** ========== Hero modal window ========== */
 
@@ -408,19 +406,17 @@ button {
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .modal-close:hover,
 .modal-close:focus {
   color: var(--modal-button-accent-icon-cl);
   background-color: var(--modal-button-accent-bgd);
-}
-
-.modal-close {
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
 }
 
 .icon-close-modal {
@@ -546,18 +542,16 @@ button {
   background-color: var(--social-links-bgd);
 
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--social-links-accent-bgd);
-}
-
-.team-social-link {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
 }
 
 .team .icon {
@@ -592,13 +586,11 @@ button {
   border-radius: 4px;
 
   color: var(--customers-links-cl);
-}
 
-.client-logo {
-  width: 104px;
-  height: 56px;
-
-  fill: currentColor;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .customers-link:hover,
@@ -607,11 +599,11 @@ button {
   color: var(--customers-links-accent-cl);
 }
 
-.customers-link {
-  transition-property: border, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
+.client-logo {
+  width: 104px;
+  height: 56px;
+
+  fill: currentColor;
 }
 
 /**========== Footer ==========*/
@@ -694,18 +686,16 @@ button {
   background-color: var(--social-links-bgd);
   
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--social-links-accent-footer-bgd);
-}
-
-.footer-social-link {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
 }
 
 .footer .icon {
@@ -750,6 +740,11 @@ button {
 
   border: 1px solid var(--btns-portfolio-border-cl);
   border-radius: 4px;
+
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .portfolio-btn:hover,
@@ -760,13 +755,6 @@ button {
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-btn {
-  transition-property: color, background-color, border-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
 }
 
 .portfolio-subtitle {
@@ -785,18 +773,16 @@ button {
 
 .portfolio-cards .link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .portfolio-cards .link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.portfolio-cards .link {
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
 }
 
 .portfolio-txt-card {
@@ -832,19 +818,15 @@ button {
   height: 100%;
     
   color: var(--portfolio-overlay-text-cl);
-  background-color: var(--cards-overlay-bgd);   
-}
-
-.portfolio-cards-link:hover .overlay-text,
-.portfolio-cards-link:focus .overlay-text {
-  transform: translate(0%, 0%);
-} 
-
-.portfolio-cards-link .overlay-text {
+  background-color: var(--cards-overlay-bgd);  
+  
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 }
 
-
+.portfolio-cards-link:hover .overlay-text,
+.portfolio-cards-link:focus .overlay-text {
+  transform: translate(0%, 0%);
+} 
