@@ -37,6 +37,7 @@
 
   /** Header line color */
   --header-line-cl: #e7e9fc;
+  --header-underline-link-bgd: #404BBF;
 
   /** Cards */
   --cards-bgd-cl: #ffffff;
@@ -286,7 +287,7 @@ button {
   width: 100%;
   height: 4px;
   
-  background-color: currentColor;
+  background-color: var(--header-underline-link-bgd);
 
   border-radius: 2px;
 }
