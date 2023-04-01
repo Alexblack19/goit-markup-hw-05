@@ -374,21 +374,24 @@ button {
 }
 
 .backdrop {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: absolute;
   bottom: 12px;
   left: 50%;
   right: 50%;
-  transform: translateX(-50%);  
+  transform: translateX(-50%);   */
 
-  width: 408px;
-  height: 576px;  
+  
 }
 
-.modal {
+.modal-window {
   position: relative;
     
-  width: 100%;
-  height: 100%;  
+  width: 408px;
+  height: 576px; 
   
   background-color: var(--modal-window-bgd);
 
@@ -396,7 +399,7 @@ button {
   border-radius: 4px;
 }
 
-.modal-close {
+.modal-close-btn {
   position: absolute;  
   top: 24px;
   right: 24px;
@@ -419,8 +422,8 @@ button {
   transition-delay: var(--transition-delay);
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   color: var(--modal-button-accent-icon-cl);
   background-color: var(--modal-button-accent-bgd);
 }
