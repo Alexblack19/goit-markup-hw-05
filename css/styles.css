@@ -775,7 +775,7 @@ button {
 
 /** ========== Hero modal window ========== */
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -786,10 +786,8 @@ button {
   justify-content: center;
   align-items: center;
 
-  
-
-  
-} */
+  background-color: var(--modal-backdrop-bgcl); 
+}
 
 .modal-window {
   position: relative;
