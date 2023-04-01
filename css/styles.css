@@ -17,10 +17,10 @@
   --footer-social-txt-cl: #ffffff;
 
   /** Background colors */
-  --page-bgd-cl: #ffffff;
-  --hero-bgd-cl: #2e2f42;
-  --team-bgd-cl: #f4f4fd;
-  --footer-bgd-cl: #2e2f42;
+  --page-bgcl: #ffffff;
+  --hero-bgcl: #2e2f42;
+  --team-bgcl: #f4f4fd;
+  --footer-bgcl: #2e2f42;
 
   /** Buttons text colors */
   --btn-hero-txt-cl: #ffffff;
@@ -28,41 +28,42 @@
   --accent-btns-portfolio-txt-cl: #ffffff;
 
   /** Buttons background colors */
-  --btn-hero-bgd-cl: #4d5ae5;
-  --btns-portfolio-bgd-cl: #f4f4fd;
-  --accent-btns-bgd-cl: #404bbf;
+  --btn-hero-bgcl: #4d5ae5;
+  --btns-portfolio-bgcl: #f4f4fd;
+  --accent-btns-bgcl: #404bbf;
 
   /** Buttons border color */
   --btns-portfolio-border-cl: #e7e9fc;
 
   /** Header line color */
   --header-line-cl: #e7e9fc;
-  --header-underline-link-bgd: #404BBF;
+  --header-underline-link-bgcl: #404BBF;
 
   /** Cards */
   --cards-bgd-cl: #ffffff;
   --portfolio-cards-border-cl: #e7e9fc;
 
   /** Icons color */
-  --feature-icons-bgd: #f4f4fd;
+  --feature-icons-bgcl: #f4f4fd;
   --social-links-cl: #f4f4fd;
-  --social-links-bgd: #4d5ae5;
-  --social-links-accent-bgd: #404bbf;
+  --social-links-bgcl: #4d5ae5;
+  --social-links-accent-bgcl: #404bbf;
   --customers-links-cl: #8e8f99;
   --customers-links-accent-cl: #404bbf;
   --customers-border-links-cl: #8e8f99;
   --customers-border-links-accent-cl: #404bbf;
-  --social-links-accent-footer-bgd: #31d0aa;
+  --social-links-accent-footer-bgcl: #31d0aa;
 
   /** Modal window */
-  --modal-window-bgd: #FCFCFC;
+  --modal-backdrop-bgcl: rgba(46, 47, 66, 0.4);
+  --modal-window-bgcl: #FCFCFC;
   --modal-button-icon-cl: #2E2F42;
   --modal-button-accent-icon-cl: #FFFFFF;
-  --modal-button-bgd: #E7E9FC;
-  --modal-button-accent-bgd: #404BBF;
+  --modal-button-bgcl: #E7E9FC;
+  --modal-button-accent-bgcl: #404BBF;
 
   /** Portfolio cards overlay */
-  --cards-overlay-bgd: #4D5AE5;
+  --cards-overlay-bgcl: #4D5AE5;
   --portfolio-overlay-text-cl: #F4F4FD;
 
   /** Animation  */
@@ -75,7 +76,7 @@
   font-family: var(--primary-font);
 
   color: var(--primary-txt-cl);
-  background-color: var(--page-bgd-cl);
+  background-color: var(--page-bgcl);
 }
 
 /** === Reset === */
@@ -292,7 +293,7 @@ button {
   width: 100%;
   height: 4px;
   
-  background-color: var(--header-underline-link-bgd);
+  background-color: var(--header-underline-link-bgcl);
 
   border-radius: 2px;
 }
@@ -315,7 +316,7 @@ button {
     ),
     url('../images/hero/people-office.jpg');
 
-  background-color: var(--hero-bgd-cl);
+  background-color: var(--hero-bgcl);
 }
 
 .hero {
@@ -350,7 +351,7 @@ button {
   letter-spacing: 0.04em;
 
   color: var(--btn-hero-txt-cl);
-  background-color: var(--btn-hero-bgd-cl);
+  background-color: var(--btn-hero-bgcl);
 
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -364,75 +365,7 @@ button {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--accent-btns-bgd-cl);
-}
-
-/** ========== Hero modal window ========== */
-
-.hero {
-  position: relative;
-}
-
-.backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* position: absolute;
-  bottom: 12px;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);   */
-
-  
-}
-
-.modal-window {
-  position: relative;
-    
-  width: 408px;
-  height: 576px; 
-  
-  background-color: var(--modal-window-bgd);
-
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.modal-close-btn {
-  position: absolute;  
-  top: 24px;
-  right: 24px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;  
-
-  color: var(--modal-button-icon-cl);
-  background-color: var(--modal-button-bgd);
-
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  transition-property: color, background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  transition-delay: var(--transition-delay);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  color: var(--modal-button-accent-icon-cl);
-  background-color: var(--modal-button-accent-bgd);
-}
-
-.icon-close-modal {
-  width: 8px;
-  height: 8px;
-
-  fill: currentColor;
+  background-color: var(--accent-btns-bgcl);
 }
 
 /**========== Feature ==========*/
@@ -461,7 +394,7 @@ button {
   width: 100%;
   height: 112px;
 
-  background-color: var(--feature-icons-bgd);
+  background-color: var(--feature-icons-bgcl);
 
   border-radius: 4px;
 }
@@ -490,7 +423,7 @@ button {
 /**========== Our team ==========*/
 
 .team {
-  background-color: var(--team-bgd-cl);
+  background-color: var(--team-bgcl);
 }
 
 .team-list {
@@ -503,7 +436,7 @@ button {
 .team-item {
   flex-basis: calc((100% - 72px) / 4);
 
-  background-color: var(--cards-bgd-cl);
+  background-color: var(--cards-bgcl);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -548,7 +481,7 @@ button {
   height: 100%;
 
   color: var(--social-links-cl);
-  background-color: var(--social-links-bgd);
+  background-color: var(--social-links-bgcl);
 
   border-radius: 50%;
 
@@ -560,7 +493,7 @@ button {
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--social-links-accent-bgd);
+  background-color: var(--social-links-accent-bgcl);
 }
 
 .team .icon {
@@ -656,7 +589,7 @@ button {
 }
 
 .footer {
-  background-color: var(--footer-bgd-cl);
+  background-color: var(--footer-bgcl);
 }
 
 /**========== Footer (social) ==========*/
@@ -692,7 +625,7 @@ button {
   height: 100%;
 
   color: var(--social-links-cl);
-  background-color: var(--social-links-bgd);
+  background-color: var(--social-links-bgcl);
   
   border-radius: 50%;
 
@@ -704,7 +637,7 @@ button {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--social-links-accent-footer-bgd);
+  background-color: var(--social-links-accent-footer-bgcl);
 }
 
 .footer .icon {
@@ -745,7 +678,7 @@ button {
   letter-spacing: 0.04em;
 
   color: var(--btns-portfolio-txt-cl);
-  background-color: var(--btns-portfolio-bgd-cl);
+  background-color: var(--btns-portfolio-bgcl);
 
   border: 1px solid var(--btns-portfolio-border-cl);
   border-radius: 4px;
@@ -759,8 +692,8 @@ button {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--accent-btns-portfolio-txt-cl);
-  background-color: var(--accent-btns-bgd-cl);
-  border-color: var(--accent-btns-bgd-cl);
+  background-color: var(--accent-btns-bgcl);
+  border-color: var(--accent-btns-bgcl);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -827,7 +760,7 @@ button {
   height: 100%;
     
   color: var(--portfolio-overlay-text-cl);
-  background-color: var(--cards-overlay-bgd);  
+  background-color: var(--cards-overlay-bgcl);  
   
   transition-property: transform;
   transition-duration: var(--transition-duration);
@@ -839,3 +772,82 @@ button {
 .portfolio-cards-link:focus .overlay-text {
   transform: translate(0%, 0%);
 } 
+
+/** ========== Hero modal window ========== */
+
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  
+} */
+
+.modal-window {
+  position: relative;
+    
+  width: 408px;
+  height: 576px; 
+  
+  background-color: var(--modal-window-bgcl);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  position: absolute;  
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;  
+
+  color: var(--modal-button-icon-cl);
+  background-color: var(--modal-button-bgcl);
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-property: color, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  transition-delay: var(--transition-delay);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: var(--modal-button-accent-icon-cl);
+  background-color: var(--modal-button-accent-bgcl);
+}
+
+.icon-close-modal {
+  width: 8px;
+  height: 8px;
+
+  fill: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
