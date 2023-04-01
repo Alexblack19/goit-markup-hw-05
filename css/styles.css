@@ -786,12 +786,17 @@ button {
   height: 100%;
   
   background-color: var(--modal-backdrop-bgcl); 
+
+  transition-property: opacity, visibility;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  transition-delay: var(--transition-delay);
 }
 
-.is-hidden {
-  visibility: ;
-  opacity: ;
-  pointer-events: ;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-window {
@@ -817,6 +822,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 24px;
   height: 24px;
   
@@ -846,16 +852,4 @@ button {
 
   fill: currentColor;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
