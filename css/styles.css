@@ -292,12 +292,12 @@ button {
 
 /**========== Hero ========== */
 
-.overlay {
-  max-width: 1440px;
-  min-height: 600px;
-
+.overlay { 
   margin-left: auto;
   margin-right: auto;
+
+  max-width: 1440px;
+  min-height: 600px;
 
   background-size: cover;
   background-repeat: no-repeat;
