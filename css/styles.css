@@ -723,8 +723,6 @@ button {
 
   transform: translate(0%, 100%);   
 
-  overflow-y: scroll;
-
   padding: 40px 32px;    
 
   width: 100%;
