@@ -721,7 +721,7 @@ button {
   top: 0px;
   left: 0px;
 
-  transform: translate(0%, 100%);   
+  transform: translate(0%, 100%);    
 
   padding: 40px 32px;    
 
@@ -736,7 +736,7 @@ button {
 
 .portfolio-cards-link:hover .overlay-text,
 .portfolio-cards-link:focus .overlay-text {
-  transform: translate(0%, 0%);
+  transform: translate(0%, 0%);  
 } 
 
 /** ========== Modal window ========== */
