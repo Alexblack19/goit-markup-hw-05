@@ -276,8 +276,12 @@ button {
 }
 
 .nav-list .link.current::after {  
+  content: "";
+
   position: absolute; 
   bottom: -1px;
+
+  display: block;  
   
   content: "";
   display: block;
