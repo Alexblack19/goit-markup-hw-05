@@ -275,17 +275,14 @@ button {
   position: relative;
 }
 
-.nav-list .link.current::after {  
+.nav-link.current::after{  
   content: "";
 
   position: absolute; 
+  left: 0px;
   bottom: -1px;
-
-  display: block;  
-  
-  content: "";
+    
   display: block;
-
   width: 100%;
   height: 4px;
   
