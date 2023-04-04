@@ -279,16 +279,17 @@ button {
   content: "";
 
   position: absolute; 
-  left: 0px;
   bottom: -1px;
     
-  display: block;
+  display: block; 
   width: 100%;
   height: 4px;
   
   background-color: var(--header-underline-link-bgcl);
 
   border-radius: 2px;
+
+  transform: scale(1);
 }
 
 /**========== Hero ========== */
