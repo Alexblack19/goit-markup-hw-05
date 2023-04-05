@@ -734,6 +734,8 @@ button {
   background-color: var(--cards-overlay-bgcl);  
   
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+
+  overflow: auto;
 }
 
 .portfolio-cards-link:hover .overlay-text,
