@@ -90,8 +90,6 @@ card overlay preview
 })();
 
 
-
-
 Трішки інформації по 5-му дз:
 Завдання виконано згідно з ТЗ
 Основним джерелом необхідної інформації для виконання ДЗ – конспект, відеоуроки в записі та живі вебінари з викладачем.
@@ -113,6 +111,56 @@ Position: Sticky https://codepen.io/mpadalko/pen/LYNqpGG
 Генератор трикутників http://apps.eky.hk/css-triangle-generator/
 Приклади з трансформ https://codepen.io/nazarelen/pen/EaNbLX?editors=1100
 Генератор cubic-bezier https://cubic-bezier.com/#.22,.84,.88,.03
+
+
+Період здачі 5 д/з у самому розпалі, і вже традиційно можна виділити перелік основних помилок, що зустрічаються у ваших роботах. Щоб уникнути зайвих ресабмітів радимо перед здачею дз пробігтися по вказаних нижче пунктах і, при необхідності, пофіксити допущені помилки.
+Властивість transition задається для базового стану елемента (а не для стану ховера/фокуса).
+Явно вказуємо анімовану властивість (transition-property). Так-так, знаємо: куди легше написати all або не прописати transition-property зовсім (all застосовується за замовчуванням). Але зробіть приємне ментору: не полінуйтеся вказати потрібне transition-property, це треба насамперед для вашого тренування і закріплення знань.
+Анімуємо переходи для ВСІХ елементів, які змінюються при hover/focus.
+У кнопок-фільтрів у стані hover/focus також повинна з‘являтися тінь, часто її втрачаєте.
+Оверлей з текстом на картках сторінки Портфоліо з’являється при ховері та фокусі в будь-якому місці картки.
+Додаткові матеріали:
+Бібліотека Animate.css https://animate.style/
+Бібліотека AOS (Анімациї на скрол): https://michalsnik.github.io/aos/
+Приклад анімації shake іконок: https://codepen.io/mpadalko/pen/GRWEWMZ?editors=1100
+Приклад анімації heartbeat: https://codepen.io/mpadalko/pen/JjbErPB?editors=1100
+Модальне вікно ****https://codepen.io/mpadalko/pen/eYreJEL
+animate.styleanimate.style
+Animate.css | A cross-browser library of CSS animations.
+Animate.css is a library of ready-to-use, cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and attention-guiding hints. (26 КБ)
+https://animate.style/
+
+michalsnik.github.io
+AOS - Animate on scroll library
+AOS - Animate On Scroll library using CSS3
+CodePenCodePen
+social rotate
+... (7 КБ)
+https://codepen.io/mpadalko/pen/GRWEWMZ?editors=1100
+
+CodePenCodePen
+CSS Heart Animation
+... (2 КБ)
+https://codepen.io/mpadalko/pen/JjbErPB?editors=1100
+
+CodePenCodePen
+modal GoIT
+... (2 КБ)
+https://codepen.io/mpadalko/pen/eYreJEL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
